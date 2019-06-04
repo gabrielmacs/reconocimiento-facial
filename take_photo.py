@@ -51,6 +51,7 @@ def recognize():
         for(x, y, w, h) in faces:
             cv2.rectangle(im,(x, y),(x+w, y+h),(225, 0, 0), 2)
             Id, conf = recognizer.predict(gray[y:y+h,x:x+w]) #aqui coge las nuevas imagenes de la caata y predice segun la data que tiene
+            if(conf<50):    
                 if(Id==1): # esto va a la base de datos 
                     Id="Persona 1"
                     isIdentifyed = True
