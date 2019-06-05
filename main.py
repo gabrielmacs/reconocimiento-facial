@@ -12,8 +12,8 @@ import recognize_face as rf
 
 
 def main():
-    steps = input("Bienvenidos\n Opciones\na. Presiona 1 para crear dataset y training data(Solo se permite el ID 1, 2 no mas)\nb. Presione 2 para hacer suma\n> ")
-    print('\n Use el ID 2 profesor para probar')
+    steps = input("Bienvenidos\n Opciones\na. Presiona 1 para crear dataset y training data\nb. Presione 2 para hacer suma\n> ")
+    print('\n aqui estoy')
     if(steps == '1'):
         tk.create_dataset()
         rf.run()
